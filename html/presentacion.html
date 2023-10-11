@@ -1,0 +1,123 @@
+<!DOCTYPE html >
+<html ><!-- InstanceBegin template="/Templates/lainmobiliaria.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="../css/estiloslainmobiliaria.css">
+<link rel="stylesheet" type="text/css" href="../css/estiloformulario.css">
+<link rel="stylesheet" type="text/css" href="../css/sliderstilos.css">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Happy Homes Nosotros</title>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head> 
+<body>
+<!-- Cabecera y Pestañas --> 
+
+	<header class="cabecera">
+  	<div class="logo">
+   		<img src="../imagenes/fotos_varias/LOGO-HAPPY-HOMES1.png" width="140px">
+   	</div>
+		<div class="tlfn">
+		 555 666 444 info@happyhomes.com 
+		</div>
+       <?php
+    // Inicializar la variable $pestana
+    	$pestana = '';
+    // Verificar si se ha enviado la variable 'pestana' en la URL
+   		 if (isset($_POST['pestana'])) {
+        			$pestana = $_POST['pestana'];
+   		 }
+    ?>
+       <div id="menu" class="pestanas">
+ 			<ul>
+				<li><a href="../index.php">Inicio</a></li>
+				<li><a href="../php/ventas.php?pestana=venta">Venta</a></li>
+				<li><a href="../php/alquiler.php?pestana=alquiler">Alquiler</a></li>
+				<li><a href="presentacion.html">Nosotros</a></li>
+            <li><a href="blog.html">Blog</a></li>
+				<li><a href="../php/contacto.php">Contacto</a></li> 
+			</ul>
+		</div>
+     
+   </header>
+   
+   
+ 
+	<!--Fin de Cabecera y pestañas-->
+    		
+<!-- InstanceBeginEditable name="EditRegion3" -->
+ 
+<div class="contenedor">
+	<div class="linea1">
+		<div class="imagen1"><img src="../imagenes/fotos_varias/nosotros.jpg"></div>
+      
+		<div class="texto1"><h2><u>NOSOTROS</u></h2> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed enim ut sem viverra. Scelerisque purus semper eget duis. Tortor dignissim convallis aenean et. Aliquam sem et tortor consequat id porta nibh. Quam id leo in vitae. Mi ipsum faucibus vitae aliquet nec. Dictum fusce ut placerat orci nulla pellentesque dignissim enim. Integer feugiat scelerisque varius morbi enim nunc faucibus a pellentesque. Aliquam id diam maecenas ultricies mi eget mauris pharetra. Odio aenean sed adipiscing diam donec. Cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum.</div>
+	</div>
+
+ 	<h2><u> SERVICIOS</u></h2>
+
+	<div class="linea2">
+		<div class="columna1">
+			<div class="imagen2"><img src="../imagenes/fotos_varias/peritobajo.jpg" width="200" height="135" alt="perito" />
+            </div>
+	
+            <div class="texto2"><h3>PERITACIONES</h3>Leo urna molestie at elementum. Sed turpis tincidunt id aliquet risus feugiat in ante. Vitae justo eget magna fermentum iaculis eu non. Purus viverra accumsan in nisl nisi scelerisque eu. Massa tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin. Leo integer malesuada nunc vel. Arcu non odio euismod lacinia at quis risus sed.</div>
+		</div>
+      <div class="columna2">
+			<div class="imagen3"><img src="../imagenes/fotos_varias/financiarbajo.jpg" width="200" height="129" alt="financiacion" />
+            </div>
+            <div class="texto3"><h3>FINANCIACIÓN</h3>Ornare suspendisse sed nisi lacus sed. Mi proin sed libero enim sed faucibus turpis. Ornare suspendisse sed nisi lacus sed viverra tellus. Et pharetra pharetra massa massa ultricies mi quis hendrerit. Donec enim diam vulputate ut. Blandit volutpat maecenas volutpat blandit aliquam etiam erat velit scelerisque. Consequat nisl vel pretium lectus quam id leo in vitae. </div>
+		</div>
+		<div class="columna3">
+			<div class="imagen4"><img src="../imagenes/fotos_varias/abogadobajo.jpg" width="200" height="133" alt="aseroria juridica" />
+            </div>
+            <div class="texto4"><h3>ASESORÍA JURÍDICA</h3>Venenatis tellus in metus vulputate eu scelerisque felis imperdiet proin. Aliquam ut porttitor leo a diam sollicitudin tempor id eu. Scelerisque in dictum non consectetur. Enim neque volutpat ac tincidunt. Eget dolor morbi non arcu risus quis varius. Hendrerit dolor magna eget est lorem ipsum dolor sit. </div>
+		</div>
+	</div>
+</div>
+ 
+ <!-- InstanceEndEditable -->
+ 
+<!------------El pie ------------------------------------> 
+<hr class="separador">
+<footer>
+
+  	<header class="encima_footer">
+	 	<div class="contactame">
+  			Contáctanos.
+ 		</div> 
+		<div class="grid-ciudades">
+  			<div class="grid-item">Barcelona: Pº de Gracia, 23.</div>
+  			<div class="grid-item">Tlfno:555.444.1112</div>
+  			<div class="grid-item">Bilbao: Garn vía, 56.</div>
+  			<div class="grid-item">Tlfno:555.444.2224</div>
+  			<div class="grid-item">Madrid: Calle Alcalá, 23.</div>
+  			<div class="grid-item">Tlfno:555.444.333</div>
+ 			<div class="grid-item">Málaga: Pº del Parque, 24.</div>
+  			<div class="grid-item">Tlfno:555.444.444</div>
+  			<div class="grid-item">Sevilla: Calle Sierpes, 12.</div>
+  			<div class="grid-item">Tlfno:555.444.555</div>
+  			<div class="grid-item">Valencia: Pº del Mar, 34.</div>
+  			<div class="grid-item">Tlfno:555.444.666</div>
+		</div> 
+ 	</header>
+	
+    <div class="color_footer"> 
+ 	 	<div class="redes_sociales">
+			SÍGUENOS EN:           
+   	 	<img src="../imagenes/fotos_varias/redessociales.png" width="80px" alt="redes_sociales">
+       	</div>	
+		
+ 		<div class="servicios">
+ 			Nuestros servicios 
+	   	<p>Gestión de compra-venta de Inmuebles | Alquiler de viviendas |
+      	Administración de inmuebles | Certificados energéticos |
+     		Peritación | Financiación | Asesor jurídico </p>
+			<p style="text-align:center; font-size:12px">&copy; 2023 Happy Homes. Todos los derechos reservados. <a href="politicadeprivacidad.html">Aviso Legal y Politica de Privacidad </a>| <a href="politicadecookies.html">Politica de Cookies</a></p>
+			<p style="text-align:center; font-size:12px">“La información contenida en esta web es orientativa y no tiene carácter vinculante”  </p>
+		</div>
+	</div>
+</footer>                   
+</body>
+<!-- InstanceEnd --></html>

@@ -1,0 +1,272 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	margin:0 0 0 0;
+	color:#5A7302;
+	background-color: #E7F2D5;	
+}
+.posicion_formulario {
+	margin-top:105px}
+.formulario {
+	display: flex;
+	width: 80%;
+	margin: 0 auto;
+	padding: 10px;
+    font-size: 20px;
+    color: #5A7302;
+    font-weight: bold;
+	flex-wrap: wrap;
+	border: 1px solid #5A7302;
+	box-sizing: border-box; 
+	 }
+.formulario form{
+	width:100%}
+label{
+	display:block;
+	text-align:center;
+	width: 100%;
+}
+.tipo{
+	margin-top:20px;
+	    font-size: 20px;
+    color: #5A7302;
+    font-weight: bold;
+	}
+.operacion, .ciudad, .propiedad, .construccion
+{ 
+	flex: 1 0 auto;
+	width: 24%;
+  	margin-bottom: 10px;
+  	box-sizing: border-box;
+ 	display: inline-block;
+}
+#datos-avanzados
+.metros,
+.habitaciones,
+.banos,
+.precio,
+.estado,
+.amueblada
+{ 
+	flex: 1 0 auto;
+	width: 12%;
+  	margin-bottom: 10px;
+ 	box-sizing: border-box;
+ 	display: inline-block;
+	}
+	
+
+.operacion select,
+.ciudad select,
+.propiedad select,
+.construccion input,
+.metros input,
+.habitaciones select,
+.banos select,
+.precio input,
+.estado select,
+.amueblada input
+ {
+    width:100%;
+    padding: 0;
+    border-radius: 4px;
+	color:#5A7302;
+	background:#E7F2D5;
+}
+.construccion,
+.precio, .metros input::placeholder {
+   color: #5A7302;
+   font-weight: bold
+}
+.estado{
+	padding-left:10px;
+	}
+
+.redondel {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 10px;
+}
+#botones {
+  text-align: right;
+  margin-right:10px;
+  font-size:18px;
+}
+.filtros, .buscar{
+  font-size: 20px; 
+  background-color: #E7F2D5;
+}*/
+			/*	listado de casas */
+
+.listado {
+	display: flex;
+ 	flex-wrap: wrap;
+	margin: 0 auto;
+	width:90%;
+ 	justify-content: space-between;
+ 	margin-top:20px;
+  }
+.cuadrado {
+  flex-basis: calc(25% - 20px);
+  margin-bottom: 20px;
+  text-align: center;
+  border: 1px solid #5A7302;
+}
+
+.precio_listado {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 20px;
+  min-height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+.foto, .caracterisitcas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.foto img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+   
+}
+.direccion{
+	font-size: 20px;
+	color:#5A7302;
+	font-weight: bold;
+	margin-top:5px;
+	margin-bottom:10px;
+	}
+.caracterisitcas {
+  display: flex;
+  justify-content: center;
+
+}
+.metros {
+  display: inline-block;
+  padding-left:15px;
+  margin-left:20px;
+  font-size: 20px;
+  color: #5A7302;
+  font-weight: bold;
+}
+.habitaciones {
+  display: inline-block;
+  font-size: 20px;
+  color: #5A7302;padding-left:15px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+.banos {
+  display: inline-block;
+  font-size: 20px;padding-left:15px;
+  color: #5A7302;
+  font-weight: bold;
+  margin-top: 10px; }
+  
+ .listado {
+	display: flex;
+ 	flex-wrap: wrap;
+	margin: 0 auto;
+	width:90%;
+ 	justify-content: space-between;
+ 	padding: 0 40px;
+ 	margin-top:20px;
+  }
+.cuadrado {
+  flex-basis: calc(25% - 20px);
+  margin-bottom: 20px;
+  text-align: center;
+  border: 1px solid #5A7302;
+}
+.precio_listado{
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 20px;
+	}
+.foto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.foto img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.direccion{
+	font-size: 20px;
+	color:#5A7302;
+	font-weight: bold;
+	margin-top:5px;
+	margin-bottom:10px;
+	}
+.metros, .habitaciones, .banos {
+  display: inline-block;
+  margin-right:15px; 
+  font-size: 20px;
+	color:#5A7302;
+	font-weight: bold;
+	margin-bottom:10px;
+	
+} 
+  
+ @media screen and (max-width: 768px) {
+	.formulario {
+		width: 100%;
+		padding: 5px;
+	}
+	
+	.operacion,
+	.ciudad,
+	.propiedad,
+	.construccion,
+	.metros,
+	.habitaciones,
+	.banos,
+	.precio,
+	.estado,
+	.amueblada {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.posicion_formulario {
+		margin-top: 50px;
+	}
+	
+	.formulario {
+		font-size: 16px;
+	}
+	
+	label {
+		font-size: 18px;
+	}
+	
+	.redondel {
+		margin-left: 5px;
+	}
+	
+	#botones {
+		font-size: 16px;
+	}
+	
+	.filtros,
+	.buscar {
+		font-size: 16px;
+	}
+} 
+  
+  
+  
+  
+  
+  
+  
